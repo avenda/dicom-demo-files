@@ -9,5 +9,5 @@ if [ ! -d dcm4che-$DCM_VERSION ]; then
     wget http://tcpdiag.dl.sourceforge.net/project/dcm4che/dcm4che3/$DCM_VERSION/dcm4che-$DCM_VERSION-bin.zip
     unzip dcm4che-$DCM_VERSION-bin.zip
 fi
-cd dcm4che-$DCM_VERSION && bin/storescu -c $1@$2:$3 $4
+dcm4che-$DCM_VERSION/bin/storescu -c $1@$2:$3 $4
 
